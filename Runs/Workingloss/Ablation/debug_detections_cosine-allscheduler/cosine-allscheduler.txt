@@ -1,0 +1,217 @@
+[PhysicalDevice(name='/physical_device:GPU:0', device_type='GPU')]
+Built with CUDA: 12.5.1
+Built with cuDNN: 9
+
+=== 2010_004469 ===
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 4s/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m4s[0m 4s/step
+Responsible anchor @ (r6,c1,a0):
+  True label   = person
+  Pred class   = person
+  Conf         = 0.106
+  Class prob   = 0.517
+  Final score  = 0.055
+Responsible anchor @ (r6,c2,a0):
+  True label   = person
+  Pred class   = bottle
+  Conf         = 0.412
+  Class prob   = 0.861
+  Final score  = 0.355
+Responsible anchor @ (r6,c2,a0):
+  True label   = person
+  Pred class   = bottle
+  Conf         = 0.412
+  Class prob   = 0.861
+  Final score  = 0.355
+Responsible anchor @ (r7,c1,a1):
+  True label   = person
+  Pred class   = person
+  Conf         = 0.179
+  Class prob   = 0.972
+  Final score  = 0.174
+Responsible anchor @ (r7,c5,a1):
+  True label   = person
+  Pred class   = person
+  Conf         = 0.668
+  Class prob   = 0.991
+  Final score  = 0.662
+Responsible anchor @ (r7,c9,a1):
+  True label   = person
+  Pred class   = person
+  Conf         = 0.176
+  Class prob   = 0.927
+  Final score  = 0.163
+Responsible anchor @ (r5,c8,a2):
+  True label   = train
+  Pred class   = person
+  Conf         = 0.002
+  Class prob   = 0.872
+  Final score  = 0.002
+ written → debug_detections/2010_004469_debug.png
+
+=== 2008_005269 ===
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 19ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 30ms/step
+Responsible anchor @ (r7,c6,a2):
+  True label   = train
+  Pred class   = train
+  Conf         = 0.075
+  Class prob   = 0.584
+  Final score  = 0.044
+Responsible anchor @ (r4,c12,a0):
+  True label   = train
+  Pred class   = car
+  Conf         = 0.072
+  Class prob   = 0.401
+  Final score  = 0.029
+Responsible anchor @ (r4,c11,a0):
+  True label   = train
+  Pred class   = car
+  Conf         = 0.047
+  Class prob   = 0.304
+  Final score  = 0.014
+Responsible anchor @ (r4,c8,a0):
+  True label   = train
+  Pred class   = boat
+  Conf         = 0.031
+  Class prob   = 0.283
+  Final score  = 0.009
+ written → debug_detections/2008_005269_debug.png
+
+=== 2009_000474 ===
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 19ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 30ms/step
+Responsible anchor @ (r7,c9,a1):
+  True label   = person
+  Pred class   = person
+  Conf         = 0.167
+  Class prob   = 0.996
+  Final score  = 0.167
+Responsible anchor @ (r7,c5,a1):
+  True label   = person
+  Pred class   = person
+  Conf         = 0.121
+  Class prob   = 0.999
+  Final score  = 0.121
+Responsible anchor @ (r8,c6,a2):
+  True label   = sofa
+  Pred class   = person
+  Conf         = 0.057
+  Class prob   = 0.777
+  Final score  = 0.044
+ written → debug_detections/2009_000474_debug.png
+
+=== 2009_000416 ===
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 18ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 29ms/step
+Responsible anchor @ (r6,c6,a2):
+  True label   = sofa
+  Pred class   = dog
+  Conf         = 0.492
+  Class prob   = 0.608
+  Final score  = 0.299
+Responsible anchor @ (r7,c6,a2):
+  True label   = dog
+  Pred class   = dog
+  Conf         = 0.435
+  Class prob   = 0.549
+  Final score  = 0.239
+ written → debug_detections/2009_000416_debug.png
+
+=== 2010_005785 ===
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 19ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 30ms/step
+Responsible anchor @ (r6,c6,a2):
+  True label   = car
+  Pred class   = aeroplane
+  Conf         = 0.476
+  Class prob   = 0.404
+  Final score  = 0.192
+ written → debug_detections/2010_005785_debug.png
+
+=== 2008_004970 ===
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 18ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 29ms/step
+Responsible anchor @ (r6,c6,a2):
+  True label   = motorbike
+  Pred class   = motorbike
+  Conf         = 0.417
+  Class prob   = 0.430
+  Final score  = 0.179
+ written → debug_detections/2008_004970_debug.png
+
+=== 2011_003892 ===
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 18ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 29ms/step
+Responsible anchor @ (r7,c6,a1):
+  True label   = person
+  Pred class   = person
+  Conf         = 0.227
+  Class prob   = 0.983
+  Final score  = 0.224
+ written → debug_detections/2011_003892_debug.png
+
+=== 2008_003193 ===
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 18ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 29ms/step
+Responsible anchor @ (r5,c4,a1):
+  True label   = person
+  Pred class   = person
+  Conf         = 0.109
+  Class prob   = 0.961
+  Final score  = 0.104
+Responsible anchor @ (r3,c2,a1):
+  True label   = person
+  Pred class   = person
+  Conf         = 0.061
+  Class prob   = 0.646
+  Final score  = 0.040
+ written → debug_detections/2008_003193_debug.png
+
+=== 2011_000646 ===
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 18ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 29ms/step
+Responsible anchor @ (r7,c6,a2):
+  True label   = sofa
+  Pred class   = person
+  Conf         = 0.019
+  Class prob   = 0.916
+  Final score  = 0.018
+Responsible anchor @ (r7,c1,a1):
+  True label   = person
+  Pred class   = person
+  Conf         = 0.502
+  Class prob   = 0.981
+  Final score  = 0.492
+Responsible anchor @ (r7,c6,a1):
+  True label   = person
+  Pred class   = person
+  Conf         = 0.474
+  Class prob   = 0.999
+  Final score  = 0.473
+Responsible anchor @ (r7,c5,a1):
+  True label   = person
+  Pred class   = person
+  Conf         = 0.747
+  Class prob   = 0.998
+  Final score  = 0.746
+ written → debug_detections/2011_000646_debug.png
+
+=== 2009_001635 ===
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 18ms/step[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 29ms/step
+Responsible anchor @ (r8,c5,a2):
+  True label   = horse
+  Pred class   = dog
+  Conf         = 0.095
+  Class prob   = 0.394
+  Final score  = 0.037
+Responsible anchor @ (r3,c7,a0):
+  True label   = person
+  Pred class   = person
+  Conf         = 0.032
+  Class prob   = 0.855
+  Final score  = 0.027
+Responsible anchor @ (r5,c6,a2):
+  True label   = person
+  Pred class   = person
+  Conf         = 0.120
+  Class prob   = 0.528
+  Final score  = 0.063
+Responsible anchor @ (r8,c7,a1):
+  True label   = horse
+  Pred class   = cat
+  Conf         = 0.075
+  Class prob   = 0.364
+  Final score  = 0.027
+ written → debug_detections/2009_001635_debug.png

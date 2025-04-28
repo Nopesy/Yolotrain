@@ -1,0 +1,1191 @@
+2025-04-24 23:00:57.368955: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1745535657.386327   98501 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1745535657.391466   98501 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1745535657.406447   98501 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1745535657.406472   98501 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1745535657.406474   98501 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1745535657.406476   98501 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+2025-04-24 23:00:57.410621: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+I0000 00:00:1745535664.206928   98501 gpu_device.cc:2019] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 7856 MB memory:  -> device: 0, name: NVIDIA A100 80GB PCIe MIG 1g.10gb, pci bus id: 0000:01:00.0, compute capability: 8.0
+[PhysicalDevice(name='/physical_device:GPU:0', device_type='GPU')]
+Built with CUDA: 12.5.1
+Built with cuDNN: 9
+Epoch 1/1000
+I0000 00:00:1745535666.266792   98501 cuda_dnn.cc:529] Loaded cuDNN version 90300
+IoU for positives: [0.00565406773]
+loss_loc, loss_obj, loss_noobj, loss_class: 4.97172928 2.11820984 0.0352889262 8.04278564
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 7s/step - loss: 15.1680IoU for positives: [0.503011227]
+loss_loc, loss_obj, loss_noobj, loss_class: 2.48494387 0.695324719 0.0346001163 2.9996593
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m7s[0m 7s/step - loss: 15.1680 - val_loss: 6.2145
+Epoch 2/1000
+IoU for positives: [0.0384893492]
+loss_loc, loss_obj, loss_noobj, loss_class: 4.80755329 1.3407272e-09 0.0343220793 0
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 345ms/step - loss: 4.8419IoU for positives: [0.504776537]
+loss_loc, loss_obj, loss_noobj, loss_class: 2.47611737 0.700084209 0.0344995447 3.0060575
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 431ms/step - loss: 4.8419 - val_loss: 6.2168
+Epoch 3/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 2.9706293e-11 0.0352551714 0
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 334ms/step - loss: 5.0353IoU for positives: [0.507416427]
+loss_loc, loss_obj, loss_noobj, loss_class: 2.4629178 0.706648231 0.0343712084 3.01450539
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 489ms/step - loss: 5.0353 - val_loss: 6.2184
+Epoch 4/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 1.18609211e-11 0.0355736911 0
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 475ms/step - loss: 5.0356IoU for positives: [0.510665417]
+loss_loc, loss_obj, loss_noobj, loss_class: 2.44667292 0.714173377 0.0342266299 3.02446795
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m1s[0m 572ms/step - loss: 5.0356 - val_loss: 6.2195
+Epoch 5/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 7.78116373e-12 0.0355491228 0
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 343ms/step - loss: 5.0355IoU for positives: [0.514007]
+loss_loc, loss_obj, loss_noobj, loss_class: 2.42996502 0.722102284 0.0340720713 3.03628802
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 428ms/step - loss: 5.0355 - val_loss: 6.2224
+Epoch 6/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 8.27689393e-12 0.0352816954 0
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 341ms/step - loss: 5.0353IoU for positives: [0.517647207]
+loss_loc, loss_obj, loss_noobj, loss_class: 2.41176391 0.73000437 0.0339146666 3.04932952
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 427ms/step - loss: 5.0353 - val_loss: 6.2250
+Epoch 7/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 9.00340566e-12 0.0349084139 0
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 332ms/step - loss: 5.0349IoU for positives: [0.521494091]
+loss_loc, loss_obj, loss_noobj, loss_class: 2.39252949 0.738035381 0.0337582529 3.06332755
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 419ms/step - loss: 5.0349 - val_loss: 6.2277
+Epoch 8/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 1.01663166e-11 0.0345636792 0
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 340ms/step - loss: 5.0346IoU for positives: [0.525423288]
+loss_loc, loss_obj, loss_noobj, loss_class: 2.37288356 0.746039391 0.0336013474 3.07794499
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 423ms/step - loss: 5.0346 - val_loss: 6.2305
+Epoch 9/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 1.39998048e-11 0.0341463722 0
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 341ms/step - loss: 5.0341IoU for positives: [0.525850117]
+loss_loc, loss_obj, loss_noobj, loss_class: 2.37074947 0.75399822 0.0334455594 3.0930686
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 424ms/step - loss: 5.0341 - val_loss: 6.2513
+Epoch 10/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 1.88105764e-11 0.0336712748 0
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 339ms/step - loss: 5.0337IoU for positives: [0.523592949]
+loss_loc, loss_obj, loss_noobj, loss_class: 2.38203526 0.762004197 0.0332896821 3.10837078
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 422ms/step - loss: 5.0337 - val_loss: 6.2857
+Epoch 11/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 2.42848172e-11 0.0331635587 0
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 344ms/step - loss: 5.0332IoU for positives: [0.520845175]
+loss_loc, loss_obj, loss_noobj, loss_class: 2.39577413 0.769895 0.0331350453 3.12372613
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m1s[0m 512ms/step - loss: 5.0332 - val_loss: 6.3225
+Epoch 12/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 3.04416319e-11 0.0326253921 0
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 338ms/step - loss: 5.0326IoU for positives: [0.517789841]
+loss_loc, loss_obj, loss_noobj, loss_class: 2.4110508 0.777662 0.0329830423 3.13907766
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 438ms/step - loss: 5.0326 - val_loss: 6.3608
+Epoch 13/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 3.98481283e-11 0.0320377834 1.19209282e-07
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 337ms/step - loss: 5.0320IoU for positives: [0.514384151]
+loss_loc, loss_obj, loss_noobj, loss_class: 2.42807913 0.785366058 0.0328322873 3.15413737
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 423ms/step - loss: 5.0320 - val_loss: 6.4004
+Epoch 14/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 5.02572046e-11 0.0314026587 1.19209282e-07
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 338ms/step - loss: 5.0314IoU for positives: [0.510586083]
+loss_loc, loss_obj, loss_noobj, loss_class: 2.44706964 0.792944849 0.0326829813 3.16951799
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 441ms/step - loss: 5.0314 - val_loss: 6.4422
+Epoch 15/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 6.69445541e-11 0.0307618137 1.19209282e-07
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 334ms/step - loss: 5.0308IoU for positives: [0.506516516]
+loss_loc, loss_obj, loss_noobj, loss_class: 2.46741748 0.800484478 0.0325334817 3.1850934
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 416ms/step - loss: 5.0308 - val_loss: 6.4855
+Epoch 16/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 8.67242736e-11 0.0301188026 1.19209282e-07
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 326ms/step - loss: 5.0301IoU for positives: [0.502195776]
+loss_loc, loss_obj, loss_noobj, loss_class: 2.48902106 0.807632923 0.0323869176 3.20060515
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 481ms/step - loss: 5.0301 - val_loss: 6.5296
+Epoch 17/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 1.11481768e-10 0.0294614397 1.19209282e-07
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 466ms/step - loss: 5.0295IoU for positives: [0.497696042]
+loss_loc, loss_obj, loss_noobj, loss_class: 2.51152 0.814353943 0.0322417729 3.21644974
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m1s[0m 621ms/step - loss: 5.0295 - val_loss: 6.5746
+Epoch 18/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 1.42817078e-10 0.0287930761 1.19209282e-07
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 469ms/step - loss: 5.0288IoU for positives: [0.491651505]
+loss_loc, loss_obj, loss_noobj, loss_class: 2.54174232 0.820745051 0.0320985615 3.23226309
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m1s[0m 623ms/step - loss: 5.0288 - val_loss: 6.6268
+Epoch 19/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 1.78249332e-10 0.0281262938 1.19209282e-07
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 458ms/step - loss: 5.0281IoU for positives: [0.481425911]
+loss_loc, loss_obj, loss_noobj, loss_class: 2.59287071 0.826907516 0.0319571942 3.24800706
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m1s[0m 541ms/step - loss: 5.0281 - val_loss: 6.6997
+Epoch 20/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 2.21208288e-10 0.0274592135 1.19209282e-07
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 336ms/step - loss: 5.0275IoU for positives: [0.471281052]
+loss_loc, loss_obj, loss_noobj, loss_class: 2.64359474 0.832821965 0.0318174064 3.26369214
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 422ms/step - loss: 5.0275 - val_loss: 6.7719
+Epoch 21/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 2.69634787e-10 0.0267905686 1.19209282e-07
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 334ms/step - loss: 5.0268IoU for positives: [0.461355031]
+loss_loc, loss_obj, loss_noobj, loss_class: 2.69322491 0.83838284 0.031679254 3.27937722
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 417ms/step - loss: 5.0268 - val_loss: 6.8427
+Epoch 22/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 3.27221583e-10 0.0261279717 1.19209282e-07
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 332ms/step - loss: 5.0261IoU for positives: [0.45164746]
+loss_loc, loss_obj, loss_noobj, loss_class: 2.74176264 0.843671799 0.0315417871 3.29518747
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 422ms/step - loss: 5.0261 - val_loss: 6.9122
+Epoch 23/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 3.90805444e-10 0.0254719239 1.19209282e-07
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 332ms/step - loss: 5.0255IoU for positives: [0.442207634]
+loss_loc, loss_obj, loss_noobj, loss_class: 2.78896189 0.848745465 0.0314035304 3.31136
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 414ms/step - loss: 5.0255 - val_loss: 6.9805
+Epoch 24/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 4.62663768e-10 0.0248311963 1.19209282e-07
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 338ms/step - loss: 5.0248IoU for positives: [0.433011711]
+loss_loc, loss_obj, loss_noobj, loss_class: 2.83494139 0.853572726 0.0312645771 3.32765722
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 424ms/step - loss: 5.0248 - val_loss: 7.0474
+Epoch 25/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 5.46864332e-10 0.0241899528 1.19209282e-07
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 325ms/step - loss: 5.0242IoU for positives: [0.423994422]
+loss_loc, loss_obj, loss_noobj, loss_class: 2.88002777 0.85825336 0.0311249197 3.3439548
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 408ms/step - loss: 5.0242 - val_loss: 7.1134
+Epoch 26/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 6.39589437e-10 0.0235666968 1.19209282e-07
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 335ms/step - loss: 5.0236IoU for positives: [0.41524297]
+loss_loc, loss_obj, loss_noobj, loss_class: 2.92378521 0.862472713 0.0309861731 3.35999537
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 418ms/step - loss: 5.0236 - val_loss: 7.1772
+Epoch 27/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 7.31697369e-10 0.0229552332 1.19209282e-07
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 335ms/step - loss: 5.0230IoU for positives: [0.406689942]
+loss_loc, loss_obj, loss_noobj, loss_class: 2.96655035 0.866323352 0.0308477227 3.3760488
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 420ms/step - loss: 5.0230 - val_loss: 7.2398
+Epoch 28/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 8.33746072e-10 0.0223538317 1.19209282e-07
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 329ms/step - loss: 5.0224IoU for positives: [0.398391217]
+loss_loc, loss_obj, loss_noobj, loss_class: 3.00804377 0.869766355 0.0307090208 3.39161468
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 411ms/step - loss: 5.0224 - val_loss: 7.3001
+Epoch 29/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 9.46280165e-10 0.0217703599 1.19209282e-07
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 329ms/step - loss: 5.0218IoU for positives: [0.390292406]
+loss_loc, loss_obj, loss_noobj, loss_class: 3.04853797 0.872937202 0.030570019 3.40728927
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 483ms/step - loss: 5.0218 - val_loss: 7.3593
+Epoch 30/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 1.07688347e-09 0.0212065689 1.19209282e-07
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 478ms/step - loss: 5.0212IoU for positives: [0.382342219]
+loss_loc, loss_obj, loss_noobj, loss_class: 3.08828878 0.875899374 0.0304300599 3.42295432
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m1s[0m 564ms/step - loss: 5.0212 - val_loss: 7.4176
+Epoch 31/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 1.1978244e-09 0.0206546448 1.19209282e-07
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 334ms/step - loss: 5.0207IoU for positives: [0.374605954]
+loss_loc, loss_obj, loss_noobj, loss_class: 3.12697029 0.878525496 0.0302894805 3.4383359
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 417ms/step - loss: 5.0207 - val_loss: 7.4741
+Epoch 32/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 1.34298195e-09 0.0201229416 1.19209282e-07
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 330ms/step - loss: 5.0201IoU for positives: [0.367068678]
+loss_loc, loss_obj, loss_noobj, loss_class: 3.16465664 0.880961657 0.0301492084 3.45363474
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 413ms/step - loss: 5.0201 - val_loss: 7.5294
+Epoch 33/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 1.49039248e-09 0.0196108688 1.19209282e-07
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 335ms/step - loss: 5.0196IoU for positives: [0.359693229]
+loss_loc, loss_obj, loss_noobj, loss_class: 3.20153379 0.883131325 0.030007733 3.46880603
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 425ms/step - loss: 5.0196 - val_loss: 7.5835
+Epoch 34/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 1.64588909e-09 0.0191154685 1.19209282e-07
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 335ms/step - loss: 5.0191IoU for positives: [0.352592945]
+loss_loc, loss_obj, loss_noobj, loss_class: 3.23703527 0.8850438 0.029865738 3.48375368
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 426ms/step - loss: 5.0191 - val_loss: 7.6357
+Epoch 35/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 1.79005444e-09 0.0186392795 1.19209282e-07
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 336ms/step - loss: 5.0186IoU for positives: [0.34569782]
+loss_loc, loss_obj, loss_noobj, loss_class: 3.27151084 0.886861205 0.0297232866 3.49862337
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 420ms/step - loss: 5.0186 - val_loss: 7.6867
+Epoch 36/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 1.98120187e-09 0.0181795936 1.19209282e-07
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 332ms/step - loss: 5.0182IoU for positives: [0.339029133]
+loss_loc, loss_obj, loss_noobj, loss_class: 3.30485439 0.888427258 0.0295802783 3.51309204
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 419ms/step - loss: 5.0182 - val_loss: 7.7360
+Epoch 37/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 2.13928275e-09 0.0177334119 1.19209282e-07
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 307ms/step - loss: 5.0177IoU for positives: [0.332514]
+loss_loc, loss_obj, loss_noobj, loss_class: 3.33743 0.889923096 0.0294366758 3.52745509
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 390ms/step - loss: 5.0177 - val_loss: 7.7842
+Epoch 38/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 2.2928357e-09 0.0173050128 1.19209282e-07
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 335ms/step - loss: 5.0173IoU for positives: [0.326242328]
+loss_loc, loss_obj, loss_noobj, loss_class: 3.36878824 0.891358137 0.0292921681 3.54142928
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 417ms/step - loss: 5.0173 - val_loss: 7.8309
+Epoch 39/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 2.47670284e-09 0.0168894548 1.19209282e-07
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 324ms/step - loss: 5.0169IoU for positives: [0.320041865]
+loss_loc, loss_obj, loss_noobj, loss_class: 3.39979053 0.89262706 0.0291470606 3.5552845
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 479ms/step - loss: 5.0169 - val_loss: 7.8768
+Epoch 40/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 2.58597588e-09 0.0164929293 1.19209282e-07
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 481ms/step - loss: 5.0165IoU for positives: [0.314049184]
+loss_loc, loss_obj, loss_noobj, loss_class: 3.42975402 0.893863916 0.029001398 3.56887
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m1s[0m 566ms/step - loss: 5.0165 - val_loss: 7.9215
+Epoch 41/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 2.69263345e-09 0.0161116663 1.19209282e-07
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 335ms/step - loss: 5.0161IoU for positives: [0.308225]
+loss_loc, loss_obj, loss_noobj, loss_class: 3.4588747 0.895117044 0.0288540572 3.5824976
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 418ms/step - loss: 5.0161 - val_loss: 7.9653
+Epoch 42/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 2.77058221e-09 0.0157455504 1.19209282e-07
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 339ms/step - loss: 5.0157IoU for positives: [0.302582443]
+loss_loc, loss_obj, loss_noobj, loss_class: 3.48708773 0.896351814 0.0287053082 3.59587646
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 493ms/step - loss: 5.0157 - val_loss: 8.0080
+Epoch 43/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 2.84653323e-09 0.0153952092 1.19209282e-07
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 465ms/step - loss: 5.0154IoU for positives: [0.297056973]
+loss_loc, loss_obj, loss_noobj, loss_class: 3.51471519 0.897684336 0.0285554416 3.60900974
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m1s[0m 550ms/step - loss: 5.0154 - val_loss: 8.0500
+Epoch 44/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 2.88988722e-09 0.0150590222 1.19209282e-07
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 325ms/step - loss: 5.0151IoU for positives: [0.291633129]
+loss_loc, loss_obj, loss_noobj, loss_class: 3.54183435 0.899024844 0.0284037422 3.62220383
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 481ms/step - loss: 5.0151 - val_loss: 8.0915
+Epoch 45/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 2.89536062e-09 0.0147341 1.19209282e-07
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 465ms/step - loss: 5.0147IoU for positives: [0.286461562]
+loss_loc, loss_obj, loss_noobj, loss_class: 3.56769204 0.900433779 0.0282517485 3.63502312
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m1s[0m 621ms/step - loss: 5.0147 - val_loss: 8.1314
+Epoch 46/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 2.89888047e-09 0.0144261718 1.19209282e-07
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 470ms/step - loss: 5.0144IoU for positives: [0.281365]
+loss_loc, loss_obj, loss_noobj, loss_class: 3.59317493 0.901843667 0.0280981492 3.64760733
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m1s[0m 626ms/step - loss: 5.0144 - val_loss: 8.1707
+Epoch 47/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 2.88559132e-09 0.0141296508 1.19209282e-07
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 465ms/step - loss: 5.0141IoU for positives: [0.276408851]
+loss_loc, loss_obj, loss_noobj, loss_class: 3.61795568 0.903374255 0.0279429983 3.66022587
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m1s[0m 619ms/step - loss: 5.0141 - val_loss: 8.2095
+Epoch 48/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 2.81383139e-09 0.0138437161 1.19209282e-07
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 462ms/step - loss: 5.0138IoU for positives: [0.271561384]
+loss_loc, loss_obj, loss_noobj, loss_class: 3.64219308 0.905014157 0.0277857818 3.6726656
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m1s[0m 619ms/step - loss: 5.0138 - val_loss: 8.2477
+Epoch 49/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 2.75281486e-09 0.0135697937 1.19209282e-07
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 477ms/step - loss: 5.0136IoU for positives: [0.266826063]
+loss_loc, loss_obj, loss_noobj, loss_class: 3.66586971 0.90684545 0.0276263598 3.68494701
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m1s[0m 556ms/step - loss: 5.0136 - val_loss: 8.2853
+Epoch 50/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 2.66020272e-09 0.0133053325 1.19209282e-07
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 327ms/step - loss: 5.0133IoU for positives: [0.262172669]
+loss_loc, loss_obj, loss_noobj, loss_class: 3.68913651 0.908686817 0.0274662822 3.69700313
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 406ms/step - loss: 5.0133 - val_loss: 8.3223
+Epoch 51/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 2.52756593e-09 0.013049365 1.19209282e-07
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 334ms/step - loss: 5.0130IoU for positives: [0.25764522]
+loss_loc, loss_obj, loss_noobj, loss_class: 3.71177387 0.910678148 0.0273041762 3.70895743
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 415ms/step - loss: 5.0130 - val_loss: 8.3587
+Epoch 52/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 2.40827625e-09 0.0128019927 1.19209282e-07
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 403ms/step - loss: 5.0128IoU for positives: [0.253146678]
+loss_loc, loss_obj, loss_noobj, loss_class: 3.73426676 0.91271615 0.0271411091 3.72060657
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 489ms/step - loss: 5.0128 - val_loss: 8.3947
+Epoch 53/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 2.26913377e-09 0.0125637129 1.19209282e-07
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 330ms/step - loss: 5.0126IoU for positives: [0.248801365]
+loss_loc, loss_obj, loss_noobj, loss_class: 3.75599337 0.914756119 0.0269762557 3.73218489
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 416ms/step - loss: 5.0126 - val_loss: 8.4299
+Epoch 54/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 2.10096451e-09 0.0123321675 1.19209282e-07
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 331ms/step - loss: 5.0123IoU for positives: [0.24453406]
+loss_loc, loss_obj, loss_noobj, loss_class: 3.77732968 0.916975737 0.026809141 3.74383116
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 412ms/step - loss: 5.0123 - val_loss: 8.4649
+Epoch 55/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 1.93948679e-09 0.0121084442 1.19209282e-07
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 332ms/step - loss: 5.0121IoU for positives: [0.240385294]
+loss_loc, loss_obj, loss_noobj, loss_class: 3.79807353 0.919314146 0.0266413484 3.75513649
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 416ms/step - loss: 5.0121 - val_loss: 8.4992
+Epoch 56/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 1.77781878e-09 0.0118910251 1.19209282e-07
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 331ms/step - loss: 5.0119IoU for positives: [0.236344233]
+loss_loc, loss_obj, loss_noobj, loss_class: 3.81827879 0.921647489 0.0264722351 3.76631618
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 416ms/step - loss: 5.0119 - val_loss: 8.5327
+Epoch 57/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 1.63302771e-09 0.0116797425 1.19209282e-07
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 330ms/step - loss: 5.0117IoU for positives: [0.232377276]
+loss_loc, loss_obj, loss_noobj, loss_class: 3.83811355 0.924051285 0.0263019297 3.77750683
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 413ms/step - loss: 5.0117 - val_loss: 8.5660
+Epoch 58/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 1.46870838e-09 0.0114746988 1.19209282e-07
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 327ms/step - loss: 5.0115IoU for positives: [0.228514627]
+loss_loc, loss_obj, loss_noobj, loss_class: 3.85742688 0.926482797 0.0261312015 3.78852558
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 411ms/step - loss: 5.0115 - val_loss: 8.5986
+Epoch 59/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 1.33331379e-09 0.0112753613 1.19209282e-07
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 332ms/step - loss: 5.0113IoU for positives: [0.22472854]
+loss_loc, loss_obj, loss_noobj, loss_class: 3.87635732 0.928867638 0.0259596091 3.79937816
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 415ms/step - loss: 5.0113 - val_loss: 8.6306
+Epoch 60/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 1.19883e-09 0.0110816779 1.19209282e-07
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 335ms/step - loss: 5.0111IoU for positives: [0.221044257]
+loss_loc, loss_obj, loss_noobj, loss_class: 3.89477873 0.931302667 0.0257881209 3.81025648
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 424ms/step - loss: 5.0111 - val_loss: 8.6621
+Epoch 61/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 1.07300835e-09 0.01089318 1.19209282e-07
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 427ms/step - loss: 5.0109IoU for positives: [0.217471853]
+loss_loc, loss_obj, loss_noobj, loss_class: 3.91264081 0.933834076 0.0256165955 3.82098985
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m1s[0m 510ms/step - loss: 5.0109 - val_loss: 8.6931
+Epoch 62/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 9.64071822e-10 0.0107105412 1.19209282e-07
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 332ms/step - loss: 5.0107IoU for positives: [0.213942453]
+loss_loc, loss_obj, loss_noobj, loss_class: 3.9302876 0.936368 0.0254445933 3.83196139
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 416ms/step - loss: 5.0107 - val_loss: 8.7241
+Epoch 63/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 8.65863048e-10 0.0105339214 1.19209282e-07
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 335ms/step - loss: 5.0105IoU for positives: [0.210531369]
+loss_loc, loss_obj, loss_noobj, loss_class: 3.94734335 0.938975811 0.0252715386 3.84277058
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 418ms/step - loss: 5.0105 - val_loss: 8.7544
+Epoch 64/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 7.70889075e-10 0.0103605809 1.19209282e-07
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 326ms/step - loss: 5.0104IoU for positives: [0.207200304]
+loss_loc, loss_obj, loss_noobj, loss_class: 3.96399856 0.941504359 0.0250995904 3.85340047
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 483ms/step - loss: 5.0104 - val_loss: 8.7840
+Epoch 65/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 6.86542e-10 0.0101940986 1.19209282e-07
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 479ms/step - loss: 5.0102IoU for positives: [0.203932822]
+loss_loc, loss_obj, loss_noobj, loss_class: 3.98033595 0.94422704 0.0249273479 3.86424422
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m1s[0m 561ms/step - loss: 5.0102 - val_loss: 8.8137
+Epoch 66/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 6.13244511e-10 0.0100312606 2.38418551e-07
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 329ms/step - loss: 5.0100IoU for positives: [0.200683]
+loss_loc, loss_obj, loss_noobj, loss_class: 3.99658489 0.946807265 0.0247542523 3.8750689
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 412ms/step - loss: 5.0100 - val_loss: 8.8432
+Epoch 67/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 5.49292722e-10 0.00987336505 2.38418551e-07
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 324ms/step - loss: 5.0099IoU for positives: [0.197527587]
+loss_loc, loss_obj, loss_noobj, loss_class: 4.012362 0.949544668 0.0245827381 3.88584161
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 479ms/step - loss: 5.0099 - val_loss: 8.8723
+Epoch 68/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 4.93419805e-10 0.00972115248 2.38418551e-07
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 323ms/step - loss: 5.0097IoU for positives: [0.194435328]
+loss_loc, loss_obj, loss_noobj, loss_class: 4.02782345 0.952261806 0.0244098678 3.89644885
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 408ms/step - loss: 5.0097 - val_loss: 8.9009
+Epoch 69/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 4.41769149e-10 0.00957296882 2.38418551e-07
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 329ms/step - loss: 5.0096IoU for positives: [0.19142808]
+loss_loc, loss_obj, loss_noobj, loss_class: 4.04285955 0.954967618 0.0242383331 3.90711
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 415ms/step - loss: 5.0096 - val_loss: 8.9292
+Epoch 70/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 3.99037442e-10 0.00942978356 2.38418551e-07
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 322ms/step - loss: 5.0094IoU for positives: [0.188470811]
+loss_loc, loss_obj, loss_noobj, loss_class: 4.0576458 0.957744718 0.0240672119 3.91781926
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 408ms/step - loss: 5.0094 - val_loss: 8.9573
+Epoch 71/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 3.58868185e-10 0.00928971823 2.38418551e-07
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 333ms/step - loss: 5.0093IoU for positives: [0.185556218]
+loss_loc, loss_obj, loss_noobj, loss_class: 4.07221889 0.96036309 0.0238969047 3.9281795
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 424ms/step - loss: 5.0093 - val_loss: 8.9847
+Epoch 72/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 3.23942123e-10 0.00915446132 2.38418551e-07
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 330ms/step - loss: 5.0092IoU for positives: [0.182753339]
+loss_loc, loss_obj, loss_noobj, loss_class: 4.08623314 0.963068 0.023726359 3.93858266
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 418ms/step - loss: 5.0092 - val_loss: 9.0116
+Epoch 73/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 2.94239605e-10 0.00902302191 2.38418551e-07
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 331ms/step - loss: 5.0090IoU for positives: [0.179969221]
+loss_loc, loss_obj, loss_noobj, loss_class: 4.10015392 0.965722919 0.0235566478 3.94895267
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 415ms/step - loss: 5.0090 - val_loss: 9.0384
+Epoch 74/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 2.67376815e-10 0.00889421068 2.38418551e-07
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 332ms/step - loss: 5.0089IoU for positives: [0.177224904]
+loss_loc, loss_obj, loss_noobj, loss_class: 4.11387539 0.968394339 0.0233875979 3.95943975
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 414ms/step - loss: 5.0089 - val_loss: 9.0651
+Epoch 75/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 2.43316589e-10 0.00876943953 2.38418551e-07
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 332ms/step - loss: 5.0088IoU for positives: [0.174550578]
+loss_loc, loss_obj, loss_noobj, loss_class: 4.12724686 0.971101046 0.0232193395 3.9695704
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 415ms/step - loss: 5.0088 - val_loss: 9.0911
+Epoch 76/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 2.19890342e-10 0.00864864513 2.38418551e-07
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 331ms/step - loss: 5.0086IoU for positives: [0.171894774]
+loss_loc, loss_obj, loss_noobj, loss_class: 4.14052582 0.973807037 0.0230509099 3.97956
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 416ms/step - loss: 5.0086 - val_loss: 9.1169
+Epoch 77/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 2.00960401e-10 0.0085293 2.38418551e-07
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 327ms/step - loss: 5.0085IoU for positives: [0.169343472]
+loss_loc, loss_obj, loss_noobj, loss_class: 4.15328264 0.976563752 0.0228828471 3.98991609
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 406ms/step - loss: 5.0085 - val_loss: 9.1426
+Epoch 78/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 1.83993182e-10 0.0084130764 2.38418551e-07
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 336ms/step - loss: 5.0084IoU for positives: [0.16685155]
+loss_loc, loss_obj, loss_noobj, loss_class: 4.1657424 0.97950536 0.0227146614 4.00024176
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 432ms/step - loss: 5.0084 - val_loss: 9.1682
+Epoch 79/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 1.67772962e-10 0.00829944666 2.38418551e-07
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 330ms/step - loss: 5.0083IoU for positives: [0.164372131]
+loss_loc, loss_obj, loss_noobj, loss_class: 4.17813921 0.982409418 0.0225475542 4.01023388
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 415ms/step - loss: 5.0083 - val_loss: 9.1933
+Epoch 80/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 1.54725455e-10 0.00819010846 2.38418551e-07
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 332ms/step - loss: 5.0082IoU for positives: [0.161967188]
+loss_loc, loss_obj, loss_noobj, loss_class: 4.19016409 0.985179901 0.0223806296 4.02030182
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 414ms/step - loss: 5.0082 - val_loss: 9.2180
+Epoch 81/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 1.40462711e-10 0.0080827605 2.38418551e-07
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 331ms/step - loss: 5.0081IoU for positives: [0.159572467]
+loss_loc, loss_obj, loss_noobj, loss_class: 4.20213747 0.98806119 0.022212781 4.03057575
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 419ms/step - loss: 5.0081 - val_loss: 9.2430
+Epoch 82/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 1.2853274e-10 0.00797804 2.38418551e-07
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 333ms/step - loss: 5.0080IoU for positives: [0.157236636]
+loss_loc, loss_obj, loss_noobj, loss_class: 4.21381664 0.99115926 0.0220464114 4.04054
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 417ms/step - loss: 5.0080 - val_loss: 9.2676
+Epoch 83/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 1.18167587e-10 0.00787480548 2.38418551e-07
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 333ms/step - loss: 5.0079IoU for positives: [0.154965013]
+loss_loc, loss_obj, loss_noobj, loss_class: 4.2251749 0.994004548 0.0218793526 4.05027628
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 417ms/step - loss: 5.0079 - val_loss: 9.2913
+Epoch 84/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 1.09378291e-10 0.00777491042 2.38418551e-07
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 335ms/step - loss: 5.0078IoU for positives: [0.152742967]
+loss_loc, loss_obj, loss_noobj, loss_class: 4.23628521 0.997072458 0.0217127185 4.059793
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 420ms/step - loss: 5.0078 - val_loss: 9.3149
+Epoch 85/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 9.94881122e-11 0.00767594436 3.57627812e-07
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 333ms/step - loss: 5.0077IoU for positives: [0.150188014]
+loss_loc, loss_obj, loss_noobj, loss_class: 4.24905968 1.0002439 0.0215461068 4.06946325
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 417ms/step - loss: 5.0077 - val_loss: 9.3403
+Epoch 86/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 9.14835083e-11 0.00757939 3.57627812e-07
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 324ms/step - loss: 5.0076IoU for positives: [0.14760755]
+loss_loc, loss_obj, loss_noobj, loss_class: 4.26196194 1.00336313 0.021381177 4.07900333
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 407ms/step - loss: 5.0076 - val_loss: 9.3657
+Epoch 87/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 8.48338344e-11 0.0074862754 3.57627812e-07
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 341ms/step - loss: 5.0075IoU for positives: [0.145097673]
+loss_loc, loss_obj, loss_noobj, loss_class: 4.27451181 1.00640309 0.0212168675 4.08844328
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 428ms/step - loss: 5.0075 - val_loss: 9.3906
+Epoch 88/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 7.79373371e-11 0.00739448611 3.57627812e-07
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 334ms/step - loss: 5.0074IoU for positives: [0.142629981]
+loss_loc, loss_obj, loss_noobj, loss_class: 4.28685 1.00957155 0.0210520513 4.09788895
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 416ms/step - loss: 5.0074 - val_loss: 9.4154
+Epoch 89/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 7.21805532e-11 0.00730371755 3.57627812e-07
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 327ms/step - loss: 5.0073IoU for positives: [0.140242532]
+loss_loc, loss_obj, loss_noobj, loss_class: 4.29878759 1.01305664 0.0208884776 4.10745525
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 482ms/step - loss: 5.0073 - val_loss: 9.4402
+Epoch 90/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 6.65321201e-11 0.00721596973 3.57627812e-07
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 466ms/step - loss: 5.0072IoU for positives: [0.137849823]
+loss_loc, loss_obj, loss_noobj, loss_class: 4.31075096 1.01644409 0.0207251739 4.11667728
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m1s[0m 544ms/step - loss: 5.0072 - val_loss: 9.4646
+Epoch 91/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 6.1161e-11 0.00712975208 3.57627812e-07
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 543ms/step - loss: 5.0071IoU for positives: [0.135565653]
+loss_loc, loss_obj, loss_noobj, loss_class: 4.32217169 1.01973736 0.0205639154 4.12588787
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m1s[0m 697ms/step - loss: 5.0071 - val_loss: 9.4884
+Epoch 92/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 5.63218049e-11 0.00704649463 3.57627812e-07
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 471ms/step - loss: 5.0070IoU for positives: [0.133333668]
+loss_loc, loss_obj, loss_noobj, loss_class: 4.33333158 1.02306294 0.0204018392 4.1352272
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m1s[0m 551ms/step - loss: 5.0070 - val_loss: 9.5120
+Epoch 93/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 5.21978571e-11 0.00696468214 3.57627812e-07
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 537ms/step - loss: 5.0070IoU for positives: [0.131206781]
+loss_loc, loss_obj, loss_noobj, loss_class: 4.34396648 1.02640855 0.0202414636 4.14433479
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m1s[0m 694ms/step - loss: 5.0070 - val_loss: 9.5350
+Epoch 94/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 4.79726849e-11 0.00688307034 3.57627812e-07
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 466ms/step - loss: 5.0069IoU for positives: [0.129144296]
+loss_loc, loss_obj, loss_noobj, loss_class: 4.35427856 1.0297395 0.0200812109 4.15310287
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m1s[0m 620ms/step - loss: 5.0069 - val_loss: 9.5572
+Epoch 95/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 4.43526743e-11 0.00680477871 3.57627812e-07
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 467ms/step - loss: 5.0068IoU for positives: [0.127080396]
+loss_loc, loss_obj, loss_noobj, loss_class: 4.36459827 1.03311682 0.0199217554 4.16195631
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m1s[0m 623ms/step - loss: 5.0068 - val_loss: 9.5796
+Epoch 96/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 4.07773815e-11 0.00672754 4.76837045e-07
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 470ms/step - loss: 5.0067IoU for positives: [0.125075]
+loss_loc, loss_obj, loss_noobj, loss_class: 4.37462521 1.03675795 0.0197633449 4.17100954
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m1s[0m 624ms/step - loss: 5.0067 - val_loss: 9.6022
+Epoch 97/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 3.79187653e-11 0.00665188534 4.76837045e-07
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 466ms/step - loss: 5.0067IoU for positives: [0.123143338]
+loss_loc, loss_obj, loss_noobj, loss_class: 4.38428354 1.04026 0.019605156 4.17975473
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m1s[0m 553ms/step - loss: 5.0067 - val_loss: 9.6239
+Epoch 98/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 3.50907393e-11 0.00657821493 4.76837045e-07
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 337ms/step - loss: 5.0066IoU for positives: [0.121256188]
+loss_loc, loss_obj, loss_noobj, loss_class: 4.3937192 1.04396367 0.0194477737 4.18863153
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 420ms/step - loss: 5.0066 - val_loss: 9.6458
+Epoch 99/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 3.26132905e-11 0.00650535338 4.76837045e-07
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 336ms/step - loss: 5.0065IoU for positives: [0.119377203]
+loss_loc, loss_obj, loss_noobj, loss_class: 4.40311384 1.0475558 0.0192915611 4.19741154
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 431ms/step - loss: 5.0065 - val_loss: 9.6674
+Epoch 100/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 3.03414065e-11 0.00643359125 4.76837045e-07
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 343ms/step - loss: 5.0064IoU for positives: [0.117578313]
+loss_loc, loss_obj, loss_noobj, loss_class: 4.41210842 1.05105054 0.0191363972 4.2063179
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 443ms/step - loss: 5.0064 - val_loss: 9.6886
+Epoch 101/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 2.81176835e-11 0.00636409828 4.76837045e-07
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 345ms/step - loss: 5.0064IoU for positives: [0.115807138]
+loss_loc, loss_obj, loss_noobj, loss_class: 4.42096424 1.05469584 0.0189818107 4.21478939
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m1s[0m 503ms/step - loss: 5.0064 - val_loss: 9.7094
+Epoch 102/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 2.61160971e-11 0.00629550125 4.76837045e-07
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 488ms/step - loss: 5.0063IoU for positives: [0.11409732]
+loss_loc, loss_obj, loss_noobj, loss_class: 4.42951345 1.05829811 0.0188289 4.22356367
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m1s[0m 578ms/step - loss: 5.0063 - val_loss: 9.7302
+Epoch 103/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 2.42989032e-11 0.00622863183 4.76837045e-07
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 337ms/step - loss: 5.0062IoU for positives: [0.112404436]
+loss_loc, loss_obj, loss_noobj, loss_class: 4.43797779 1.06212211 0.0186755713 4.2321825
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 432ms/step - loss: 5.0062 - val_loss: 9.7510
+Epoch 104/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 2.24807e-11 0.0061621191 4.76837045e-07
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 333ms/step - loss: 5.0062IoU for positives: [0.11075113]
+loss_loc, loss_obj, loss_noobj, loss_class: 4.44624424 1.06581235 0.0185239725 4.24065781
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 417ms/step - loss: 5.0062 - val_loss: 9.7712
+Epoch 105/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 2.09679097e-11 0.00609767437 4.76837045e-07
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 330ms/step - loss: 5.0061IoU for positives: [0.109124146]
+loss_loc, loss_obj, loss_noobj, loss_class: 4.45437956 1.06991327 0.0183712859 4.24952173
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 422ms/step - loss: 5.0061 - val_loss: 9.7922
+Epoch 106/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 1.94747673e-11 0.00603377353 4.76837045e-07
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 350ms/step - loss: 5.0060IoU for positives: [0.107530288]
+loss_loc, loss_obj, loss_noobj, loss_class: 4.46234846 1.07371259 0.0182212275 4.2580862
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 436ms/step - loss: 5.0060 - val_loss: 9.8124
+Epoch 107/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 1.82185222e-11 0.00597159332 4.76837045e-07
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 337ms/step - loss: 5.0060IoU for positives: [0.105990909]
+loss_loc, loss_obj, loss_noobj, loss_class: 4.47004557 1.07774973 0.0180714093 4.26682472
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 436ms/step - loss: 5.0060 - val_loss: 9.8327
+Epoch 108/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 1.68771039e-11 0.00591016095 4.76837045e-07
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 355ms/step - loss: 5.0059IoU for positives: [0.104437374]
+loss_loc, loss_obj, loss_noobj, loss_class: 4.47781324 1.08184826 0.0179232247 4.27562857
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 455ms/step - loss: 5.0059 - val_loss: 9.8532
+Epoch 109/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 1.57977624e-11 0.0058499896 4.76837045e-07
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 353ms/step - loss: 5.0059IoU for positives: [0.10297934]
+loss_loc, loss_obj, loss_noobj, loss_class: 4.48510313 1.08590841 0.0177751835 4.28438377
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 452ms/step - loss: 5.0059 - val_loss: 9.8732
+Epoch 110/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 1.4735612e-11 0.00579110067 4.76837045e-07
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 348ms/step - loss: 5.0058IoU for positives: [0.101536267]
+loss_loc, loss_obj, loss_noobj, loss_class: 4.49231863 1.09003627 0.0176284909 4.2930913
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 433ms/step - loss: 5.0058 - val_loss: 9.8931
+Epoch 111/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 1.37165401e-11 0.00573251164 4.76837045e-07
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 325ms/step - loss: 5.0057IoU for positives: [0.100123614]
+loss_loc, loss_obj, loss_noobj, loss_class: 4.49938202 1.09394574 0.0174821392 4.30170202
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 479ms/step - loss: 5.0057 - val_loss: 9.9125
+Epoch 112/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 1.28872659e-11 0.0056755417 4.76837045e-07
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 487ms/step - loss: 5.0057IoU for positives: [0.0987468585]
+loss_loc, loss_obj, loss_noobj, loss_class: 4.50626564 1.09794223 0.0173377749 4.31048059
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m1s[0m 578ms/step - loss: 5.0057 - val_loss: 9.9320
+Epoch 113/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 1.19909178e-11 0.00561897457 4.76837045e-07
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 344ms/step - loss: 5.0056IoU for positives: [0.0974018425]
+loss_loc, loss_obj, loss_noobj, loss_class: 4.51299095 1.10218585 0.0171937589 4.31941
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 429ms/step - loss: 5.0056 - val_loss: 9.9518
+Epoch 114/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 1.1202355e-11 0.00556387473 4.76837045e-07
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 338ms/step - loss: 5.0056IoU for positives: [0.0960456133]
+loss_loc, loss_obj, loss_noobj, loss_class: 4.51977205 1.10645938 0.0170513839 4.32827806
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 421ms/step - loss: 5.0056 - val_loss: 9.9716
+Epoch 115/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 1.04835108e-11 0.00550973 4.76837045e-07
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 332ms/step - loss: 5.0055IoU for positives: [0.0947844833]
+loss_loc, loss_obj, loss_noobj, loss_class: 4.52607727 1.11068058 0.0169087686 4.33694553
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 418ms/step - loss: 5.0055 - val_loss: 9.9906
+Epoch 116/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 9.81717659e-12 0.00545610767 4.76837045e-07
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 333ms/step - loss: 5.0055IoU for positives: [0.0934600085]
+loss_loc, loss_obj, loss_noobj, loss_class: 4.5327 1.11517823 0.0167678706 4.34549141
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 429ms/step - loss: 5.0055 - val_loss: 10.0101
+Epoch 117/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 9.23969148e-12 0.00540359318 4.76837045e-07
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 333ms/step - loss: 5.0054IoU for positives: [0.0922202319]
+loss_loc, loss_obj, loss_noobj, loss_class: 4.53889894 1.11920357 0.0166277271 4.35412598
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 429ms/step - loss: 5.0054 - val_loss: 10.0289
+Epoch 118/1000
+IoU for positives: [1.95884775e-09]
+loss_loc, loss_obj, loss_noobj, loss_class: 5 8.59192838e-12 0.00535167754 4.76837045e-07
+tw (log bw/aw): 0.3340970619550738
+th (log bh/ah): -0.38500666994078186
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 332ms/step - loss: 5.0054

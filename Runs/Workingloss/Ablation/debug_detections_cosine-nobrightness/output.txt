@@ -1,0 +1,48 @@
+=== 2012_000172 ===
+1/1 ━━━━━━━━━━━━━━━━━━━━ 0s 40ms/step
+Responsible anchor @ (r5,c9,a1):
+  True label   = person
+  Pred class   = person
+  Conf         = 0.056
+  Class prob   = 0.714
+  Final score  = 0.040
+Responsible anchor @ (r7,c9,a1):
+  True label   = person
+  Pred class   = person
+  Conf         = 0.363
+  Class prob   = 0.976
+  Final score  = 0.355
+ written → Ablation/debug_detections_cosine-nobrightness/2012_000172_debug.png
+
+=== 2012_002998 ===
+1/1 ━━━━━━━━━━━━━━━━━━━━ 0s 36ms/step
+Responsible anchor @ (r7,c2,a1):
+  True label   = person
+  Pred class   = person
+  Conf         = 0.250
+  Class prob   = 0.995
+  Final score  = 0.249
+Responsible anchor @ (r7,c8,a1):
+  True label   = person
+  Pred class   = person
+  Conf         = 0.015
+  Class prob   = 0.478
+  Final score  = 0.007
+Responsible anchor @ (r6,c10,a1):
+  True label   = person
+  Pred class   = person
+  Conf         = 0.658
+  Class prob   = 0.997
+  Final score  = 0.657
+ written → Ablation/debug_detections_cosine-nobrightness/2012_002998_debug.png
+
+=== 2012_004006 ===
+1/1 ━━━━━━━━━━━━━━━━━━━━ 0s 40ms/step
+Responsible anchor @ (r6,c6,a2):
+  True label   = person
+  Pred class   = person
+  Conf         = 0.013
+  Class prob   = 0.878
+  Final score  = 0.011
+ written → Ablation/debug_detections_cosine-nobrightness/2012_004006_debug.png
+(myenv_gpu) chawley@ecigpu-04:~/190I$ 

@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+infer-env/
+myenv/
+*.keras
+*.h5
+*.log
+.DS_Store
+/Runs/Workingloss/dataset/

@@ -1,0 +1,316 @@
+2025-04-24 23:46:13.986072: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1745538374.003312  118727 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1745538374.008421  118727 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1745538374.023310  118727 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1745538374.023362  118727 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1745538374.023379  118727 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1745538374.023393  118727 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+2025-04-24 23:46:14.027498: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+I0000 00:00:1745538379.985670  118727 gpu_device.cc:2019] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 7856 MB memory:  -> device: 0, name: NVIDIA A100 80GB PCIe MIG 1g.10gb, pci bus id: 0000:01:00.0, compute capability: 8.0
+[PhysicalDevice(name='/physical_device:GPU:0', device_type='GPU')]
+Built with CUDA: 12.5.1
+Built with cuDNN: 9
+Epoch 1/1000
+I0000 00:00:1745538382.001158  118727 cuda_dnn.cc:529] Loaded cuDNN version 90300
+IoU pos: [0]
+loss_loc, loss_obj, loss_noobj, loss_class: 6.10805416 0.301669091 0.0362446792 8.31446457
+tw (log bw/aw): 1.396678700361011
+th (log bh/ah): 0.6804460966542751
+1.0
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 7s/step - loss: 14.7604IoU pos: [0]
+loss_loc, loss_obj, loss_noobj, loss_class: 6.20413065 0.694088757 0.0346259288 3.00094318
+tw (log bw/aw): 1.396678700361011
+th (log bh/ah): 0.6804460966542751
+1.0
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m7s[0m 7s/step - loss: 14.7604 - val_loss: 9.9338
+Epoch 2/1000
+IoU pos: [0]
+loss_loc, loss_obj, loss_noobj, loss_class: 49.4024048 0.00192211778 0.0355071686 0
+tw (log bw/aw): 1.396678700361011
+th (log bh/ah): 0.6804460966542751
+1.0
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 340ms/step - loss: 49.4398IoU pos: [0]
+loss_loc, loss_obj, loss_noobj, loss_class: 6.202775 0.695623279 0.0345738046 3.01223183
+tw (log bw/aw): 1.396678700361011
+th (log bh/ah): 0.6804460966542751
+1.0
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m1s[0m 575ms/step - loss: 49.4398 - val_loss: 9.9452
+Epoch 3/1000
+IoU pos: [0]
+loss_loc, loss_obj, loss_noobj, loss_class: 49.4024048 0.000453530316 0.0351356752 0
+tw (log bw/aw): 1.396678700361011
+th (log bh/ah): 0.6804460966542751
+1.0
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 344ms/step - loss: 49.4380IoU pos: [0]
+loss_loc, loss_obj, loss_noobj, loss_class: 6.20214891 0.697405875 0.0345100835 3.0270133
+tw (log bw/aw): 1.396678700361011
+th (log bh/ah): 0.6804460966542751
+1.0
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 434ms/step - loss: 49.4380 - val_loss: 9.9611
+Epoch 4/1000
+IoU pos: [0]
+loss_loc, loss_obj, loss_noobj, loss_class: 49.4024048 0.000119609154 0.0345333964 0
+tw (log bw/aw): 1.396678700361011
+th (log bh/ah): 0.6804460966542751
+1.0
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 334ms/step - loss: 49.4371IoU pos: [0]
+loss_loc, loss_obj, loss_noobj, loss_class: 6.20265293 0.699190795 0.0344400331 3.04445052
+tw (log bw/aw): 1.396678700361011
+th (log bh/ah): 0.6804460966542751
+1.0
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 421ms/step - loss: 49.4371 - val_loss: 9.9807
+Epoch 5/1000
+IoU pos: [0]
+loss_loc, loss_obj, loss_noobj, loss_class: 49.4024048 7.64891156e-05 0.0338006467 0
+tw (log bw/aw): 1.396678700361011
+th (log bh/ah): 0.6804460966542751
+1.0
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 336ms/step - loss: 49.4363IoU pos: [0]
+loss_loc, loss_obj, loss_noobj, loss_class: 6.20397472 0.700982928 0.0343658924 3.0635457
+tw (log bw/aw): 1.396678700361011
+th (log bh/ah): 0.6804460966542751
+1.0
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 420ms/step - loss: 49.4363 - val_loss: 10.0029
+Epoch 6/1000
+IoU pos: [0]
+loss_loc, loss_obj, loss_noobj, loss_class: 49.4024048 3.81219324e-05 0.0330463573 0
+tw (log bw/aw): 1.396678700361011
+th (log bh/ah): 0.6804460966542751
+1.0
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 332ms/step - loss: 49.4355IoU pos: [0]
+loss_loc, loss_obj, loss_noobj, loss_class: 6.20543242 0.702698469 0.0342878066 3.08370733
+tw (log bw/aw): 1.396678700361011
+th (log bh/ah): 0.6804460966542751
+1.0
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 417ms/step - loss: 49.4355 - val_loss: 10.0261
+Epoch 7/1000
+IoU pos: [0]
+loss_loc, loss_obj, loss_noobj, loss_class: 49.4024048 1.83126831e-05 0.0323166475 0
+tw (log bw/aw): 1.396678700361011
+th (log bh/ah): 0.6804460966542751
+1.0
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 335ms/step - loss: 49.4347IoU pos: [0]
+loss_loc, loss_obj, loss_noobj, loss_class: 6.20685959 0.704502702 0.0342027247 3.10459781
+tw (log bw/aw): 1.396678700361011
+th (log bh/ah): 0.6804460966542751
+1.0
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 420ms/step - loss: 49.4347 - val_loss: 10.0502
+Epoch 8/1000
+IoU pos: [0]
+loss_loc, loss_obj, loss_noobj, loss_class: 49.4024048 1.10442597e-05 0.0316231437 0
+tw (log bw/aw): 1.396678700361011
+th (log bh/ah): 0.6804460966542751
+1.0
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 336ms/step - loss: 49.4340IoU pos: [0]
+loss_loc, loss_obj, loss_noobj, loss_class: 6.20685959 0.706403136 0.0341118351 3.12616062
+tw (log bw/aw): 1.396678700361011
+th (log bh/ah): 0.6804460966542751
+1.0
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 423ms/step - loss: 49.4340 - val_loss: 10.0735
+Epoch 9/1000
+IoU pos: [0]
+loss_loc, loss_obj, loss_noobj, loss_class: 49.4024048 6.84953739e-06 0.0308882166 0
+tw (log bw/aw): 1.396678700361011
+th (log bh/ah): 0.6804460966542751
+1.0
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 339ms/step - loss: 49.4333IoU pos: [0]
+loss_loc, loss_obj, loss_noobj, loss_class: 6.20685959 0.708364 0.0340184271 3.14793396
+tw (log bw/aw): 1.396678700361011
+th (log bh/ah): 0.6804460966542751
+1.0
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 419ms/step - loss: 49.4333 - val_loss: 10.0972
+Epoch 10/1000
+IoU pos: [0]
+loss_loc, loss_obj, loss_noobj, loss_class: 49.4024048 5.33115463e-06 0.0301471502 0
+tw (log bw/aw): 1.396678700361011
+th (log bh/ah): 0.6804460966542751
+1.0
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 334ms/step - loss: 49.4326IoU pos: [0]
+loss_loc, loss_obj, loss_noobj, loss_class: 6.20685959 0.710279405 0.0339237824 3.16958904
+tw (log bw/aw): 1.396678700361011
+th (log bh/ah): 0.6804460966542751
+1.0
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 418ms/step - loss: 49.4326 - val_loss: 10.1207
+Epoch 11/1000
+IoU pos: [0]
+loss_loc, loss_obj, loss_noobj, loss_class: 49.4024048 4.45294199e-06 0.0293927435 0
+tw (log bw/aw): 1.396678700361011
+th (log bh/ah): 0.6804460966542751
+1.0
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 326ms/step - loss: 49.4318IoU pos: [0]
+loss_loc, loss_obj, loss_noobj, loss_class: 6.20685959 0.71195972 0.0338267274 3.19102812
+tw (log bw/aw): 1.396678700361011
+th (log bh/ah): 0.6804460966542751
+1.0
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 413ms/step - loss: 49.4318 - val_loss: 10.1437
+Epoch 12/1000
+IoU pos: [0]
+loss_loc, loss_obj, loss_noobj, loss_class: 49.4024048 3.90370769e-06 0.0286387 0
+tw (log bw/aw): 1.396678700361011
+th (log bh/ah): 0.6804460966542751
+1.0
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 334ms/step - loss: 49.4310IoU pos: [0]
+loss_loc, loss_obj, loss_noobj, loss_class: 6.20685959 0.713580132 0.0337252505 3.21245503
+tw (log bw/aw): 1.396678700361011
+th (log bh/ah): 0.6804460966542751
+1.0
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 418ms/step - loss: 49.4310 - val_loss: 10.1666
+Epoch 13/1000
+IoU pos: [0]
+loss_loc, loss_obj, loss_noobj, loss_class: 49.4024048 3.5374926e-06 0.027882617 0
+tw (log bw/aw): 1.396678700361011
+th (log bh/ah): 0.6804460966542751
+1.0
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 330ms/step - loss: 49.4303IoU pos: [0]
+loss_loc, loss_obj, loss_noobj, loss_class: 6.20685959 0.715033 0.033620324 3.23390412
+tw (log bw/aw): 1.396678700361011
+th (log bh/ah): 0.6804460966542751
+1.0
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 413ms/step - loss: 49.4303 - val_loss: 10.1894
+Epoch 14/1000
+IoU pos: [0]
+loss_loc, loss_obj, loss_noobj, loss_class: 49.4024048 3.44639761e-06 0.0271336697 0
+tw (log bw/aw): 1.396678700361011
+th (log bh/ah): 0.6804460966542751
+1.0
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 338ms/step - loss: 49.4295IoU pos: [0]
+loss_loc, loss_obj, loss_noobj, loss_class: 6.20685959 0.716468751 0.0335124731 3.25530243
+tw (log bw/aw): 1.396678700361011
+th (log bh/ah): 0.6804460966542751
+1.0
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 419ms/step - loss: 49.4295 - val_loss: 10.2121
+Epoch 15/1000
+IoU pos: [0]
+loss_loc, loss_obj, loss_noobj, loss_class: 49.4024048 3.46738807e-06 0.0263972729 0
+tw (log bw/aw): 1.396678700361011
+th (log bh/ah): 0.6804460966542751
+1.0
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 331ms/step - loss: 49.4288IoU pos: [0]
+loss_loc, loss_obj, loss_noobj, loss_class: 6.20685959 0.717795134 0.0334016941 3.27647734
+tw (log bw/aw): 1.396678700361011
+th (log bh/ah): 0.6804460966542751
+1.0
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 414ms/step - loss: 49.4288 - val_loss: 10.2345
+Epoch 16/1000
+IoU pos: [0]
+loss_loc, loss_obj, loss_noobj, loss_class: 49.4024048 3.61797788e-06 0.0256685279 0
+tw (log bw/aw): 1.396678700361011
+th (log bh/ah): 0.6804460966542751
+1.0
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 479ms/step - loss: 49.4281IoU pos: [0]
+loss_loc, loss_obj, loss_noobj, loss_class: 6.20685959 0.719086587 0.033289168 3.29743242
+tw (log bw/aw): 1.396678700361011
+th (log bh/ah): 0.6804460966542751
+1.0
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m1s[0m 561ms/step - loss: 49.4281 - val_loss: 10.2567
+Epoch 17/1000
+IoU pos: [0]
+loss_loc, loss_obj, loss_noobj, loss_class: 49.4024048 3.92028369e-06 0.0249694847 0
+tw (log bw/aw): 1.396678700361011
+th (log bh/ah): 0.6804460966542751
+1.0
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 341ms/step - loss: 49.4274IoU pos: [0]
+loss_loc, loss_obj, loss_noobj, loss_class: 6.20685959 0.72036618 0.0331730433 3.31800985
+tw (log bw/aw): 1.396678700361011
+th (log bh/ah): 0.6804460966542751
+1.0
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 426ms/step - loss: 49.4274 - val_loss: 10.2784
+Epoch 18/1000
+IoU pos: [0]
+loss_loc, loss_obj, loss_noobj, loss_class: 49.4024048 4.26146971e-06 0.024301663 0
+tw (log bw/aw): 1.396678700361011
+th (log bh/ah): 0.6804460966542751
+1.0
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 329ms/step - loss: 49.4267IoU pos: [0]
+loss_loc, loss_obj, loss_noobj, loss_class: 6.20685959 0.721683204 0.0330544524 3.33833575
+tw (log bw/aw): 1.396678700361011
+th (log bh/ah): 0.6804460966542751
+1.0
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 414ms/step - loss: 49.4267 - val_loss: 10.2999
+Epoch 19/1000
+IoU pos: [0]
+loss_loc, loss_obj, loss_noobj, loss_class: 49.4024048 4.61399077e-06 0.0236614048 0
+tw (log bw/aw): 1.396678700361011
+th (log bh/ah): 0.6804460966542751
+1.0
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 337ms/step - loss: 49.4261IoU pos: [0]
+loss_loc, loss_obj, loss_noobj, loss_class: 6.20685959 0.722900391 0.0329323672 3.35805917
+tw (log bw/aw): 1.396678700361011
+th (log bh/ah): 0.6804460966542751
+1.0
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m1s[0m 628ms/step - loss: 49.4261 - val_loss: 10.3208
+Epoch 20/1000
+IoU pos: [0]
+loss_loc, loss_obj, loss_noobj, loss_class: 49.4024048 4.94172582e-06 0.0230391081 0
+tw (log bw/aw): 1.396678700361011
+th (log bh/ah): 0.6804460966542751
+1.0
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 332ms/step - loss: 49.4254IoU pos: [0]
+loss_loc, loss_obj, loss_noobj, loss_class: 6.20685959 0.724170804 0.0328056253 3.37732601
+tw (log bw/aw): 1.396678700361011
+th (log bh/ah): 0.6804460966542751
+1.0
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 413ms/step - loss: 49.4254 - val_loss: 10.3412
+Epoch 21/1000
+IoU pos: [0]
+loss_loc, loss_obj, loss_noobj, loss_class: 49.4024048 5.12921497e-06 0.0224393364 0
+tw (log bw/aw): 1.396678700361011
+th (log bh/ah): 0.6804460966542751
+1.0
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 329ms/step - loss: 49.4248IoU pos: [0]
+loss_loc, loss_obj, loss_noobj, loss_class: 6.20685959 0.725512266 0.0326739885 3.39629221
+tw (log bw/aw): 1.396678700361011
+th (log bh/ah): 0.6804460966542751
+1.0
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 416ms/step - loss: 49.4248 - val_loss: 10.3613
+Epoch 22/1000
+IoU pos: [0]
+loss_loc, loss_obj, loss_noobj, loss_class: 49.4024048 5.24316965e-06 0.0218590349 0
+tw (log bw/aw): 1.396678700361011
+th (log bh/ah): 0.6804460966542751
+1.0
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 335ms/step - loss: 49.4243IoU pos: [0]
+loss_loc, loss_obj, loss_noobj, loss_class: 6.20685959 0.726777792 0.0325370356 3.41505909
+tw (log bw/aw): 1.396678700361011
+th (log bh/ah): 0.6804460966542751
+1.0
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 422ms/step - loss: 49.4243 - val_loss: 10.3812
+Epoch 23/1000
+IoU pos: [0]
+loss_loc, loss_obj, loss_noobj, loss_class: 49.4024048 5.22755181e-06 0.0213019 0
+tw (log bw/aw): 1.396678700361011
+th (log bh/ah): 0.6804460966542751
+1.0
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 329ms/step - loss: 49.4237IoU pos: [0]
+loss_loc, loss_obj, loss_noobj, loss_class: 6.20685959 0.728161216 0.0323956199 3.43382645
+tw (log bw/aw): 1.396678700361011
+th (log bh/ah): 0.6804460966542751
+1.0
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 417ms/step - loss: 49.4237 - val_loss: 10.4012
+Epoch 24/1000
+IoU pos: [0]
+loss_loc, loss_obj, loss_noobj, loss_class: 49.4024048 5.1492857e-06 0.0207618792 0
+tw (log bw/aw): 1.396678700361011
+th (log bh/ah): 0.6804460966542751
+1.0
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 326ms/step - loss: 49.4232IoU pos: [0]
+loss_loc, loss_obj, loss_noobj, loss_class: 6.20685959 0.729634 0.0322490707 3.45232153
+tw (log bw/aw): 1.396678700361011
+th (log bh/ah): 0.6804460966542751
+1.0
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 411ms/step - loss: 49.4232 - val_loss: 10.4211
+Epoch 25/1000
+IoU pos: [0]
+loss_loc, loss_obj, loss_noobj, loss_class: 49.4024048 4.97386281e-06 0.0202394 0
+tw (log bw/aw): 1.396678700361011
+th (log bh/ah): 0.6804460966542751
+1.0
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 330ms/step - loss: 49.4226IoU pos: [0]
+loss_loc, loss_obj, loss_noobj, loss_class: 6.20685959 0.731191 0.0320974961 3.47047877
+tw (log bw/aw): 1.396678700361011
+th (log bh/ah): 0.6804460966542751
+1.0
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 413ms/step - loss: 49.4226 - val_loss: 10.4406
+Epoch 26/1000

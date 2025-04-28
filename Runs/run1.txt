@@ -1,0 +1,7 @@
+"max_jitter": 0.0 if epoch < 5 else (0.1 if epoch < 10 else 0.2),
+"flip": epoch >= 5,
+"brightness": 0.0 if epoch < 10 else 0.2,
+"contrast": 0.0 if epoch < 10 else 0.2,
+"saturation": 0.0 if epoch < 10 else 0.2,
+
+model.compile(optimizer='adam', loss=yolo_loss)

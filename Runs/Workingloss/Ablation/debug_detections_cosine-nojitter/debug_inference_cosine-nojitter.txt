@@ -1,0 +1,267 @@
+[PhysicalDevice(name='/physical_device:GPU:0', device_type='GPU')]
+Built with CUDA: 12.5.1
+Built with cuDNN: 9
+
+=== 2010_005573 ===
+
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 4s/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m4s[0m 4s/step
+Responsible anchor @ (r6,c6,a2):
+  True label   = cat
+  Pred class   = person
+  Conf         = 0.240
+  Class prob   = 0.588
+  Final score  = 0.141
+ written → Ablation/debug_detections_cosine-nojitter/2010_005573_debug.png
+
+=== 2011_002402 ===
+
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 20ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 31ms/step
+Responsible anchor @ (r6,c7,a2):
+  True label   = motorbike
+  Pred class   = car
+  Conf         = 0.074
+  Class prob   = 0.657
+  Final score  = 0.049
+ written → Ablation/debug_detections_cosine-nojitter/2011_002402_debug.png
+
+=== 2008_001402 ===
+
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 19ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 31ms/step
+Responsible anchor @ (r7,c6,a1):
+  True label   = person
+  Pred class   = person
+  Conf         = 0.740
+  Class prob   = 0.987
+  Final score  = 0.731
+Responsible anchor @ (r9,c6,a1):
+  True label   = bicycle
+  Pred class   = bicycle
+  Conf         = 0.072
+  Class prob   = 0.780
+  Final score  = 0.056
+ written → Ablation/debug_detections_cosine-nojitter/2008_001402_debug.png
+
+=== 2011_003012 ===
+
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 19ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 30ms/step
+Responsible anchor @ (r2,c9,a0):
+  True label   = aeroplane
+  Pred class   = aeroplane
+  Conf         = 0.056
+  Class prob   = 0.701
+  Final score  = 0.040
+Responsible anchor @ (r3,c8,a0):
+  True label   = aeroplane
+  Pred class   = boat
+  Conf         = 0.179
+  Class prob   = 0.297
+  Final score  = 0.053
+Responsible anchor @ (r6,c7,a2):
+  True label   = aeroplane
+  Pred class   = car
+  Conf         = 0.182
+  Class prob   = 0.395
+  Final score  = 0.072
+ written → Ablation/debug_detections_cosine-nojitter/2011_003012_debug.png
+
+=== 2011_003497 ===
+
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 19ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 29ms/step
+Responsible anchor @ (r6,c6,a2):
+  True label   = person
+  Pred class   = person
+  Conf         = 0.240
+  Class prob   = 0.973
+  Final score  = 0.233
+ written → Ablation/debug_detections_cosine-nojitter/2011_003497_debug.png
+
+=== 2010_004402 ===
+
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 18ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 29ms/step
+Responsible anchor @ (r6,c6,a2):
+  True label   = cat
+  Pred class   = cat
+  Conf         = 0.430
+  Class prob   = 0.687
+  Final score  = 0.296
+ written → Ablation/debug_detections_cosine-nojitter/2010_004402_debug.png
+
+=== 2011_002179 ===
+
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 18ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 29ms/step
+Responsible anchor @ (r7,c6,a2):
+  True label   = sofa
+  Pred class   = person
+  Conf         = 0.417
+  Class prob   = 0.943
+  Final score  = 0.393
+Responsible anchor @ (r8,c4,a2):
+  True label   = person
+  Pred class   = person
+  Conf         = 0.114
+  Class prob   = 0.853
+  Final score  = 0.098
+Responsible anchor @ (r3,c3,a0):
+  True label   = chair
+  Pred class   = tvmonitor
+  Conf         = 0.333
+  Class prob   = 0.517
+  Final score  = 0.172
+Responsible anchor @ (r4,c2,a0):
+  True label   = chair
+  Pred class   = chair
+  Conf         = 0.005
+  Class prob   = 0.763
+  Final score  = 0.004
+Responsible anchor @ (r3,c5,a0):
+  True label   = chair
+  Pred class   = bottle
+  Conf         = 0.068
+  Class prob   = 0.400
+  Final score  = 0.027
+ written → Ablation/debug_detections_cosine-nojitter/2011_002179_debug.png
+
+=== 2008_003025 ===
+
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 19ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 29ms/step
+Responsible anchor @ (r7,c11,a0):
+  True label   = train
+  Pred class   = bus
+  Conf         = 0.083
+  Class prob   = 0.511
+  Final score  = 0.042
+Responsible anchor @ (r8,c8,a0):
+  True label   = person
+  Pred class   = person
+  Conf         = 0.408
+  Class prob   = 0.989
+  Final score  = 0.404
+Responsible anchor @ (r8,c7,a0):
+  True label   = person
+  Pred class   = person
+  Conf         = 0.727
+  Class prob   = 0.989
+  Final score  = 0.719
+Responsible anchor @ (r8,c7,a0):
+  True label   = person
+  Pred class   = person
+  Conf         = 0.727
+  Class prob   = 0.989
+  Final score  = 0.719
+Responsible anchor @ (r8,c4,a0):
+  True label   = person
+  Pred class   = person
+  Conf         = 0.749
+  Class prob   = 0.982
+  Final score  = 0.735
+Responsible anchor @ (r9,c0,a0):
+  True label   = person
+  Pred class   = person
+  Conf         = 0.197
+  Class prob   = 0.836
+  Final score  = 0.165
+Responsible anchor @ (r8,c12,a0):
+  True label   = person
+  Pred class   = person
+  Conf         = 0.647
+  Class prob   = 0.915
+  Final score  = 0.592
+Responsible anchor @ (r8,c6,a0):
+  True label   = person
+  Pred class   = person
+  Conf         = 0.417
+  Class prob   = 0.986
+  Final score  = 0.412
+Responsible anchor @ (r8,c1,a0):
+  True label   = person
+  Pred class   = person
+  Conf         = 0.548
+  Class prob   = 0.816
+  Final score  = 0.448
+Responsible anchor @ (r8,c5,a0):
+  True label   = person
+  Pred class   = person
+  Conf         = 0.161
+  Class prob   = 0.955
+  Final score  = 0.153
+Responsible anchor @ (r8,c5,a0):
+  True label   = person
+  Pred class   = person
+  Conf         = 0.161
+  Class prob   = 0.955
+  Final score  = 0.153
+Responsible anchor @ (r8,c5,a0):
+  True label   = person
+  Pred class   = person
+  Conf         = 0.161
+  Class prob   = 0.955
+  Final score  = 0.153
+Responsible anchor @ (r8,c3,a0):
+  True label   = person
+  Pred class   = person
+  Conf         = 0.164
+  Class prob   = 0.918
+  Final score  = 0.151
+Responsible anchor @ (r8,c1,a0):
+  True label   = person
+  Pred class   = person
+  Conf         = 0.548
+  Class prob   = 0.816
+  Final score  = 0.448
+Responsible anchor @ (r8,c1,a0):
+  True label   = person
+  Pred class   = person
+  Conf         = 0.548
+  Class prob   = 0.816
+  Final score  = 0.448
+ written → Ablation/debug_detections_cosine-nojitter/2008_003025_debug.png
+
+=== 2008_005566 ===
+
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 18ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 29ms/step
+Responsible anchor @ (r8,c6,a1):
+  True label   = cat
+  Pred class   = person
+  Conf         = 0.004
+  Class prob   = 0.254
+  Final score  = 0.001
+Responsible anchor @ (r6,c6,a2):
+  True label   = person
+  Pred class   = person
+  Conf         = 0.198
+  Class prob   = 0.969
+  Final score  = 0.192
+ written → Ablation/debug_detections_cosine-nojitter/2008_005566_debug.png
+
+=== 2010_004007 ===
+
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 18ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 29ms/step
+Responsible anchor @ (r7,c6,a1):
+  True label   = cat
+  Pred class   = cat
+  Conf         = 0.128
+  Class prob   = 0.649
+  Final score  = 0.083
+Responsible anchor @ (r6,c5,a1):
+  True label   = cat
+  Pred class   = person
+  Conf         = 0.156
+  Class prob   = 0.329
+  Final score  = 0.051
+Responsible anchor @ (r6,c5,a0):
+  True label   = cat
+  Pred class   = cat
+  Conf         = 0.031
+  Class prob   = 0.303
+  Final score  = 0.009
+ written → Ablation/debug_detections_cosine-nojitter/2010_004007_debug.png
